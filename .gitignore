@@ -4,6 +4,5 @@
 # Ignore VSCode files
 .vscode/
 
-# Temp ignore gif
+# Temp ignore
 crystal-comp.gif 
-
