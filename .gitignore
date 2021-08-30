@@ -1,0 +1,5 @@
+# Ignore MacOS files
+.DS_Store
+
+# Temp ignore gif
+crystal-comp.gif 
