@@ -2083,7 +2083,7 @@
     margin: 0; }
   nav.breadcrumb ul li {
     display: inline-block;
-    margin-right: 12px; }
+    margin-right: 10px; }
     @media screen and (max-width: 695px) {
       nav.breadcrumb ul li {
         margin-right: 2px; } }
@@ -2091,27 +2091,27 @@
     color: #2d2f33;
     height: 8px;
     width: 16px;
-    margin-right: 4px;
+    margin-right: 12px;
     margin-top: 7px;
     float: left; }
     @media screen and (min-width: 696px) and (max-width: 1055px) {
       nav.breadcrumb .arrow {
         height: 6px;
         width: 12px;
-        margin-right: 4px;
+        margin-right: 12px;
         margin-top: 3px; } }
     @media screen and (max-width: 695px) {
       nav.breadcrumb .arrow {
         height: 5px;
         width: 10px;
-        margin-right: 4px;
+        margin-right: 12px;
         margin-top: 6px; } }
   nav.breadcrumb li.dormant p {
     color: #c2c6cc; }
   nav.breadcrumb li.dormant .arrow {
     height: 8px;
     width: 16px;
-    margin-right: 4px;
+    margin-right: 12px;
     margin-top: 7px;
     float: left; }
     @media screen and (min-width: 696px) and (max-width: 1055px) {
