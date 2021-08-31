@@ -1,3 +1,3 @@
 # willcaulfield.com
 
-## Personal Website
+- Personal website
