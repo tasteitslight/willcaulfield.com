@@ -4,5 +4,8 @@
 # Ignore VSCode files
 .vscode/
 
+# Ignore working files
+todo_list.php
+
 # Temp ignore
 crystal-comp.gif 
