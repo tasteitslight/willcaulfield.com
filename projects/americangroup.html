@@ -203,8 +203,9 @@
 					<p id="test" class="artwork-description small">To finish, I wrote and created all content for the website, marketing, and investor relations. Highlights include custom interactive content, such as a tax savings calculator and explainer video animation.</p>
 				</div>
 				<div id="video-parent" class="artwork-image">
+                    <img class="dropshadow round-corners" src="../images/americangroup/ag-5.jpg" width="100%"/>
                     <iframe 
-                        class="dropshadow round-corners"
+                        class="dropshadow round-corners js-resp-iframe"
                         id="video-iframe" 
                         src="https://www.youtube.com/embed/QKuQrAxHMoc?rel=0&amp;modestbranding=1&amp;autohide=1&amp;fs=1" 
                         frameborder="0" 
@@ -220,8 +221,8 @@
 				</div>
                 <div class="artwork-image dropshadow">
                     <iframe 
+                        class="dropshadow round-corners js-resp-iframe"
                         id="pdf-iframe"
-                        type="application/pdf" 
                         src="https://drive.google.com/file/d/1pUjn9Z3xTKQY1ZJEJp7-CNOTj7SfeSDl/preview" 
                         frameBorder="0">
                     </iframe>
@@ -301,18 +302,19 @@
 
     <script type="text/javascript" charset="utf-8">
                 var width = document.getElementById("video-parent").offsetWidth;
-                var video = document.getElementById("video-iframe");
-                var pdf = document.getElementById("pdf-iframe");
-                video.style.height = width * 9 / 16 + "px";
-                pdf.style.height = width * 9 / 16 + "px";
+                var height = width * 9 / 16;
+                var iframes = document.getElementsByClassName("js-resp-iframe");
+                for (var i = 0, max = iframes.length; i < max; i++) {
+                    iframes[i].style.height = height + "px";
+                }
             window.addEventListener('resize', function(e){
                 var width = document.getElementById("video-parent").offsetWidth;
-                var video = document.getElementById("video-iframe");
-                var pdf = document.getElementById("pdf-iframe");
-                video.style.height = width * 9 / 16 + "px";
-                pdf.style.height = width * 9 / 16 + "px";
+                var height = width * 9 / 16;
+                var iframes = document.getElementsByClassName("js-resp-iframe");
+                for (var i = 0, max = iframes.length; i < max; i++) {
+                    iframes[i].style.height = height + "px";
+                }
             });
-        
     </script>
 
 	</body>
