@@ -293,9 +293,10 @@
 
     <script type="text/javascript" charset="utf-8">
         $(function() {
-            $('.lazy').Lazy({
-                effect: 'fadeIn',
-                delay: 5000,
+            $('.lazy').lazy({
+            effect: "fadeIn",
+            effectTime: 1000,
+            threshold: 0
             });
         });
     </script>
