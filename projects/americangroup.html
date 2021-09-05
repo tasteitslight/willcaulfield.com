@@ -41,6 +41,7 @@
     <script data-schema="WebPage" type="application/ld+json">
       {"@id":"http://www.willcaulfield.com","@type":"WebPage","@context":"http://schema.org"}
     </script>
+
     <!-- FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900' rel='stylesheet' type='text/css'>
     <!-- STYLE SHEETS -->
@@ -169,7 +170,7 @@
 					<h4 class="top-padding-ten">Branding</h4>
 					<p class="artwork-description small">Then, creative direction was needed to begin the design process. To cover this, I built a Style Guide that included font pairings, color palette &amp; rules, custom logo design, recurring design elements, and best practices for photography selection and editing.</p>
 				</div>
-				<div class="artwork-image">
+				<div class="artwork-image lazy">
 					<img src="../images/americangroup/ag-2.jpg" width="100%"/>
                     <img src="../images/americangroup/ag-3.jpg" width="100%"/>
 				</div>
@@ -188,7 +189,7 @@
 					<h4 class="top-padding-ten">Development</h4>
 					<p class="artwork-description small">Finally, to create the working website, I initialized an AWS instance and LEMP stack, then built a custom, responsive Wordpress theme to house the design with Underscores and Bootstrap. This included custom elements such as an AJAX login, maximalist navigation, and transitions using Javascript, jQuery, PHP, MySQL. </p>
 				</div>
-				<div class="artwork-image">
+				<div class="artwork-image lazy">
 					<video class="dropshadow round-corners outline lazy" width="100%" height="relative" loop autoplay muted>
 						<source src="../video/ag-video-1.mp4" type="video/mp4">
 					</video>
@@ -202,7 +203,7 @@
 					<h4 class="top-padding-ten">Content &amp; Copywriting</h4>
 					<p id="test" class="artwork-description small">To finish, I wrote and created all content for the website, marketing, and investor relations. Highlights include custom interactive content, such as a tax savings calculator and explainer video animation.</p>
 				</div>
-				<div id="video-parent" class="artwork-image">
+				<div id="video-parent" class="artwork-image lazy">
                     <img class="dropshadow round-corners" src="../images/americangroup/ag-5.jpg" width="100%"/>
                     <iframe 
                         class="dropshadow round-corners js-resp-iframe"
@@ -219,7 +220,7 @@
 					<h4 class="top-padding-ten">Marketing &amp; Investor Relations</h4>
 					<p class="artwork-description small">With the project complete, digital marketing took business priority. I was promoted to Director position to head the marketing strategy and execution. This deck was one of the materials used for Limited Partners.</p>
 				</div>
-                <div class="artwork-image dropshadow">
+                <div class="artwork-image lazy dropshadow">
                     <iframe 
                         class="dropshadow round-corners js-resp-iframe"
                         id="pdf-iframe"
@@ -285,20 +286,19 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script type="text/javascript" src="../js/styles.js"></script>
 	<script type="text/javascript" src="../js/dropdown.js"></script>
-	<script type="text/javascript" src="/js/jquery.lazy.js"></script>
+	<script type="text/javascript" src="../js/jquery.lazy.min.js"></script>
 
-	<script type="text/javascript" charset="utf-8">
-		$(function() {
-			$('.lazy').lazy({
-			 effect: "fadeIn",
-			 effectTime: 500,
-			 threshold: 0
-			});
-	 });
-	</script>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $('.lazy').Lazy({
+                effect: 'fadeIn',
+                delay: 5000,
+            });
+        });
+    </script>
 
     <script type="text/javascript" charset="utf-8">
                 var width = document.getElementById("video-parent").offsetWidth;
